@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (5.2.2)
+  - SwiftCoroutine (2.1.8)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - SwiftCoroutine
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - SwiftCoroutine
+
+SPEC CHECKSUMS:
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  SwiftCoroutine: 94a9d02aae382d4f0549a191d5ba5c01dfe752a5
+
+PODFILE CHECKSUM: 131939658b7a84ed3014d2c5ce809f3d013404fb
+
+COCOAPODS: 1.9.1
