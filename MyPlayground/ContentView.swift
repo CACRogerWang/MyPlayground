@@ -11,25 +11,39 @@ import SwiftCoroutine
 
 struct ContentView: View {
     
-    init() {
-        APIs.fetchAPICoroutine()
-        APIs.fetchAPI()
-    }
+//    init() {
+//        APIs.fetchAPICoroutine()
+//        APIs.fetchAPI()
+//    }
+    var tutors: [Tutor] = []
     
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView{
+            List(tutors) { item in
+                NavigationLink(destination: TutorDetail(name: item.name, headline: item.headline, bio: item.bio)) {
+                    Image(item.imageName)
+                        .cornerRadius(40.0)
+                    VStack(alignment: .leading) {
+                        Text(item.name)
+                        Text(item.headline)
+                            .font(.subheadline)
+                            .foregroundColor(Color.gray)
+                    }
+                }
+            }
+            .navigationBarTitle(Text("Tutors"))
+        }
     }
     
 }
-
+#if DEBUG
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(tutors: testData)
         
     }
 }
-
+#endif
 struct Joke: Codable {
     var id: Int
     var joke: String

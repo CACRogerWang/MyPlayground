@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,9 @@
 		AD586DE925554C1800031EA1 /* MyPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD586DE825554C1800031EA1 /* MyPlaygroundTests.swift */; };
 		AD586DF425554C1800031EA1 /* MyPlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD586DF325554C1800031EA1 /* MyPlaygroundUITests.swift */; };
 		C28F03BCDF4B2AB92CF9C284 /* Pods_MyPlayground_MyPlaygroundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E853344F5A30AF5CC72BB0 /* Pods_MyPlayground_MyPlaygroundUITests.framework */; };
+		DBF03D4825583430001BD375 /* Tutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF03D462558342F001BD375 /* Tutor.swift */; };
+		DBF03D4925583430001BD375 /* Tutor.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBF03D472558342F001BD375 /* Tutor.xcassets */; };
+		DBF03D4E25583CAD001BD375 /* TutorDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF03D4D25583CAD001BD375 /* TutorDetail.swift */; };
 		DF845CC488C654051AEEEBF6 /* Pods_MyPlaygroundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A64B9E44CD0A6A57C45ECC9 /* Pods_MyPlaygroundTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +58,9 @@
 		AD586DEF25554C1800031EA1 /* MyPlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPlaygroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD586DF325554C1800031EA1 /* MyPlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlaygroundUITests.swift; sourceTree = "<group>"; };
 		AD586DF525554C1800031EA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBF03D462558342F001BD375 /* Tutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutor.swift; sourceTree = "<group>"; };
+		DBF03D472558342F001BD375 /* Tutor.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Tutor.xcassets; sourceTree = "<group>"; };
+		DBF03D4D25583CAD001BD375 /* TutorDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorDetail.swift; sourceTree = "<group>"; };
 		F35F87CF1E7A3A97B75EECBD /* Pods-MyPlaygroundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPlaygroundTests.release.xcconfig"; path = "Target Support Files/Pods-MyPlaygroundTests/Pods-MyPlaygroundTests.release.xcconfig"; sourceTree = "<group>"; };
 		F45CBF5D13ECD46162E4BCE8 /* Pods-MyPlayground-MyPlaygroundUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPlayground-MyPlaygroundUITests.release.xcconfig"; path = "Target Support Files/Pods-MyPlayground-MyPlaygroundUITests/Pods-MyPlayground-MyPlaygroundUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,11 +128,14 @@
 		AD586DD525554C1600031EA1 /* MyPlayground */ = {
 			isa = PBXGroup;
 			children = (
-				AD586DD625554C1600031EA1 /* MyPlaygroundApp.swift */,
+				DBF03D462558342F001BD375 /* Tutor.swift */,
+				DBF03D472558342F001BD375 /* Tutor.xcassets */,
 				AD586DD825554C1600031EA1 /* ContentView.swift */,
+				AD586DD625554C1600031EA1 /* MyPlaygroundApp.swift */,
 				AD586DDA25554C1800031EA1 /* Assets.xcassets */,
 				AD586DDF25554C1800031EA1 /* Info.plist */,
 				AD586DDC25554C1800031EA1 /* Preview Content */,
+				DBF03D4D25583CAD001BD375 /* TutorDetail.swift */,
 			);
 			path = MyPlayground;
 			sourceTree = "<group>";
@@ -167,7 +176,6 @@
 				487E28CC80ADCA5A52737C6F /* Pods-MyPlaygroundTests.debug.xcconfig */,
 				F35F87CF1E7A3A97B75EECBD /* Pods-MyPlaygroundTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -281,6 +289,7 @@
 			files = (
 				AD586DDE25554C1800031EA1 /* Preview Assets.xcassets in Resources */,
 				AD586DDB25554C1800031EA1 /* Assets.xcassets in Resources */,
+				DBF03D4925583430001BD375 /* Tutor.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +418,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD586DD925554C1600031EA1 /* ContentView.swift in Sources */,
+				DBF03D4E25583CAD001BD375 /* TutorDetail.swift in Sources */,
+				DBF03D4825583430001BD375 /* Tutor.swift in Sources */,
 				AD586DD725554C1600031EA1 /* MyPlaygroundApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
